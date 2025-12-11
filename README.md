@@ -37,7 +37,7 @@ summary(scores)
 
 - One row = one respondent.
 - Columns named with PEIRS item IDs (defaults):  
-  `pr2, pr4, pr7, pr11, pr12, pr13, pr14, t1, t2, t3, t4, t5, t6, t7, su1, su2, su3, be1, be2, be3, cn1, cn2, cn3, ct4, fv1, fv2, fv3`.  
+  `pr1, pr2, pr3, pr4, pr5, pr6, pr7, t1, t2, t3, t4, t5, t6, t7, su1, su2, su3, be1, be2, be3, cc1, cc2, cc3, cc4, fv1, fv2, fv3`.  
 - Responses typically on **Likert 1–5**. Non-numeric columns are coerced to numeric; failures become `NA`.
 
 ---
@@ -47,11 +47,11 @@ summary(scores)
 ```r
 # Simulate toy data with the default 23 items
 set.seed(123)
-items <- c("pr2","pr4","pr7","pr11","pr12","pr13","pr14",
+items <- c("pr1","pr2","pr3","pr4","pr5","pr6","pr7",
            "t1","t2","t3","t4","t5","t6","t7",
            "su1","su2","su3",
            "be1","be2","be3",
-           "cn1","cn2","cn3","ct4",
+           "cc1","cc2","cc3","cc4",
            "fv1","fv2","fv3")
 
 dat <- as.data.frame(matrix(sample(1:5, 50*length(items), replace=TRUE), nrow=50))
