@@ -15,7 +15,7 @@ It returns per-respondent **raw totals**, **items answered**, a **standardized 0
 
 ```r
 # Load the function straight from this repo (no installation needed)
-source("https://raw.githubusercontent.com/C-Wilson-96/PEIRS-IDEAS/main/calculate_peirs_score.r")
+source("https://raw.githubusercontent.com/C-Wilson-96/PEIRS-IDEAS/refs/heads/main/calculate_peirs_score.r")
 
 # Example: score a data frame 'dat' with PEIRS items as columns
 scores <- calculate_peirs_score(dat)
