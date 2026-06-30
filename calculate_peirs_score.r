@@ -7,18 +7,20 @@
 #   - peirs_items(): helper returning default item names
 # -------------------------------------------------------------
 
-# Calculate PEIR-IDEAS scores for each respondent.
+# Calculate PEIRS-IDEAS scores for each respondent.
 # - Input: data.frame with PEIRS item columns (1–5 Likert by default)
 # - Output: data.frame with raw total, items answered, standardized 0–100, response flag
 calculate_peirs_score <- function(
   data,
   items = c(
-    "pr1","pr2","pr3","pr4","pr5","pr6","pr7",
-    "t1","t2","t3","t4","t5","t6","t7",
-    "su1","su2","su3",
-    "be1","be2","be3",
-    "cc1","cc2","cc3","cc4",
-    "fv1","fv2","fv3"
+    	   "PR_IDEAS_1","PR_IDEAS_2","PR_IDEAS_3","PR_IDEAS_4","PR_IDEAS_5",
+         "PR_IDEAS_6","PR_IDEAS_7",
+         "CC_IDEAS_1","CC_IDEAS_2","CC_IDEAS_3","CC_IDEAS_4",
+         "T_IDEAS_1","T_IDEAS_2","T_IDEAS_3","T_IDEAS_4","T_IDEAS_5",
+         "T_IDEAS_6","T_IDEAS_7",
+         "SU_IDEAS_1","SU_IDEAS_2","SU_IDEAS_3",
+         "FV_IDEAS_1","FV_IDEAS_2","FV_IDEAS_3",
+         "BE_IDEAS_1","BE_IDEAS_2","BE_IDEAS_3"
   ),
   min_items_required = 10,
   scale_from = c(1, 5),
@@ -113,10 +115,12 @@ summary.peirs_score <- function(object, ...) {
 
 # Helper: default item names
 peirs_items <- function() {
-  c("pr1","pr2","pr3","pr4","pr5","pr6","pr7",
-    "t1","t2","t3","t4","t5","t6","t7",
-    "su1","su2","su3",
-    "be1","be2","be3",
-    "cc1","cc2","cc3","cc4",
-    "fv1","fv2","fv3")
+  c("PR_IDEAS_1","PR_IDEAS_2","PR_IDEAS_3","PR_IDEAS_4","PR_IDEAS_5",
+    "PR_IDEAS_6","PR_IDEAS_7",
+    "CC_IDEAS_1","CC_IDEAS_2","CC_IDEAS_3","CC_IDEAS_4",
+    "T_IDEAS_1","T_IDEAS_2","T_IDEAS_3","T_IDEAS_4","T_IDEAS_5",
+    "T_IDEAS_6","T_IDEAS_7",
+    "SU_IDEAS_1","SU_IDEAS_2","SU_IDEAS_3",
+    "FV_IDEAS_1","FV_IDEAS_2","FV_IDEAS_3",
+    "BE_IDEAS_1","BE_IDEAS_2","BE_IDEAS_3")
 }
