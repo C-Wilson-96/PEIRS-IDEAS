@@ -1,4 +1,4 @@
-# PEIR-IDEAS — Patients Engaged in Research Survey Enhanced by Inclusion, Diversity, Equity, Acceptance, and Safety (PEIR-IDEAS) Scoring (Standalone Function)
+# PEIRS-IDEAS — Patient Engagement in Research Scale Enhanced by Inclusion, Diversity, Equity, Acceptance, and Safety (PEIRS-IDEAS) Scoring (Standalone Function)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)  
 **Status:** pre-CRAN • simple R script for scoring PEIRS
@@ -37,7 +37,12 @@ summary(scores)
 
 - One row = one respondent.
 - Columns named with PEIRS item IDs (defaults):  
-  `pr1, pr2, pr3, pr4, pr5, pr6, pr7, t1, t2, t3, t4, t5, t6, t7, su1, su2, su3, be1, be2, be3, cc1, cc2, cc3, cc4, fv1, fv2, fv3`.  
+  `PR_IDEAS_1, PR_IDEAS_2, PR_IDEAS_3, PR_IDEAS_4, PR_IDEAS_5, PR_IDEAS_6, PR_IDEAS_7,
+  CC_IDEAS_1, CC_IDEAS_2, CC_IDEAS_3, CC_IDEAS_4,
+  T_IDEAS_1, T_IDEAS_2, T_IDEAS_3, T_IDEAS_4, T_IDEAS_5, T_IDEAS_6, T_IDEAS_7,
+  SU_IDEAS_1, SU_IDEAS_2, SU_IDEAS_3,
+  FV_IDEAS_1, FV_IDEAS_2, FV_IDEAS_3,
+  BE_IDEAS_1, BE_IDEAS_2, BE_IDEAS_3`.  
 - Responses typically on **Likert 1–5**. Non-numeric columns are coerced to numeric; failures become `NA`.
 
 ---
@@ -47,12 +52,14 @@ summary(scores)
 ```r
 # Simulate toy data with the default 23 items
 set.seed(123)
-items <- c("pr1","pr2","pr3","pr4","pr5","pr6","pr7",
-           "t1","t2","t3","t4","t5","t6","t7",
-           "su1","su2","su3",
-           "be1","be2","be3",
-           "cc1","cc2","cc3","cc4",
-           "fv1","fv2","fv3")
+items <- c("PR_IDEAS_1","PR_IDEAS_2","PR_IDEAS_3","PR_IDEAS_4","PR_IDEAS_5",
+           "PR_IDEAS_6","PR_IDEAS_7",
+           "CC_IDEAS_1","CC_IDEAS_2","CC_IDEAS_3","CC_IDEAS_4",
+           "T_IDEAS_1","T_IDEAS_2","T_IDEAS_3","T_IDEAS_4","T_IDEAS_5",
+           "T_IDEAS_6","T_IDEAS_7",
+           "SU_IDEAS_1","SU_IDEAS_2","SU_IDEAS_3",
+           "FV_IDEAS_1","FV_IDEAS_2","FV_IDEAS_3",
+           "BE_IDEAS_1","BE_IDEAS_2","BE_IDEAS_3")
 
 dat <- as.data.frame(matrix(sample(1:5, 50*length(items), replace=TRUE), nrow=50))
 names(dat) <- items
@@ -102,5 +109,5 @@ Released under the **MIT License**. See the [LICENSE](LICENSE) file.
 
 ## Suggested Citations
 
-- Abelson J, Li K, Wilson G, Shields K, Schneider C, Boesveld S. Supporting quality patient and public engagement in health system organizations: development and usability testing of the PEIRS tool. *Health Expectations*. 2016;19(4):817–827. https://doi.org/10.1111/hex.12378  
+- Hamilton CB, Hoens AM, McQuitty S, McKinnon AM, English K, Backman CL, et al. Development and pre-testing of the Patient Engagement In Research Scale (PEIRS) to assess the quality of engagement from a patient perspective. PLoS One. 2018;13(11):e0206588. doi: https://doi.org10.1371/journal.pone.0206588.  
 - **PEIR-IDEAS** (pre-CRAN). “calculate_peirs_score(): Scoring the Patients Engaged in Research Scale (PEIRS) - IDEAS in R.” GitHub: quantlover/PEIR-IDEAS, 2025.
