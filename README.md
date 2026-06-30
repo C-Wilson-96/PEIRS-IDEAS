@@ -110,4 +110,4 @@ Released under the **MIT License**. See the [LICENSE](LICENSE.txt) file.
 ## Suggested Citations
 
 - Hamilton CB, Hoens AM, McQuitty S, McKinnon AM, English K, Backman CL, et al. Development and pre-testing of the Patient Engagement In Research Scale (PEIRS) to assess the quality of engagement from a patient perspective. PLoS One. 2018;13(11):e0206588. doi: https://doi.org10.1371/journal.pone.0206588.  
-- **PEIR-IDEAS** (pre-CRAN). “calculate_peirs_score(): Scoring the Patients Engaged in Research Scale (PEIRS) - IDEAS in R.” GitHub: quantlover/PEIR-IDEAS, 2025.
+- **PEIRS-IDEAS** (pre-CRAN). “calculate_peirs_score(): Scoring the Patient Engagement in Research Scale Enhanced by Inclusion, Diversity, Equity, Acceptance, and Safety (PEIRS-IDEAS) in R.” GitHub: C-Wilson-96/PEIR-IDEAS, 2025.
