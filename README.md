@@ -66,7 +66,7 @@ names(dat) <- items
 
 # Load the scorer
 # source("calculate_peirs_score.R")   # if local
-# or source("https://raw.githubusercontent.com/quantlover/PEIR-IDEAS/main/calculate_peirs_score.R")
+# or source("https://github.com/C-Wilson-96/PEIRS-IDEAS/blob/main/calculate_peirs_score.r")
 
 scores <- calculate_peirs_score(dat)
 head(scores, 3)
