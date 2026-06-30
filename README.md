@@ -103,7 +103,7 @@ scores <- calculate_peirs_score(dat, scale_from = c(0,10), scale_to = c(0,4))
 
 ## License
 
-Released under the **MIT License**. See the [LICENSE](LICENSE) file.
+Released under the **MIT License**. See the [LICENSE](LICENSE.txt) file.
 
 ---
 
